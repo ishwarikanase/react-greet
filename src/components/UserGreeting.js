@@ -22,14 +22,16 @@ export class UserGreeting extends Component {
         //     return (<div>Welcome guest</div>)
         // }
 
-        let message
-        if(this.state.isLoggedIn){
-            message=<div>welcome ishwari</div>
-        }
-        else{
-            message=<div>welcome guest</div>
-        }
-        return <div>{message}</div>
+        // let message
+        // if(this.state.isLoggedIn){
+        //     message=<div>welcome ishwari</div>
+        // }
+        // else{
+        //     message=<div>welcome guest</div>
+        // }
+        return (
+            this.state.isLoggedIn?<div>welcome ishwari</div>:<div>welcome guest</div>
+        )
     }
 }
 
