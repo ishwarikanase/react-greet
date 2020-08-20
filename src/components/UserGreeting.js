@@ -30,7 +30,8 @@ export class UserGreeting extends Component {
         //     message=<div>welcome guest</div>
         // }
         return (
-            this.state.isLoggedIn?<div>welcome ishwari</div>:<div>welcome guest</div>
+            // this.state.isLoggedIn?<div>welcome ishwari</div>:<div>welcome guest</div>
+            this.state.isLoggedIn && <div>welcome ishwari</div>
         )
     }
 }
